@@ -3,6 +3,9 @@ body {
    color: #434455;
    background-color: #ffffff;
 }
+body:has(.beckdrop.is-open) {
+   overflow: hidden;
+}
 /* comon */
 .container {
    max-width: 1158px;
@@ -545,6 +548,9 @@ p {
    background-color: rgb(64, 75, 191);
    fill: rgb(255, 255, 255);
 }
+.button-modal-close-icon {
+   fill: currentColor;
+}
 .modal-caption {
    font-weight: 500;
    line-height: 1.5;
@@ -611,6 +617,41 @@ p {
 }
 .modal-form-massage:focus {
    border-color: rgb(77, 90, 229);
+}
+/* custom checkbox */
+.form-agreement {
+   margin-bottom: 23px;
+   font-size: 12px;
+   line-height: 1.16;
+   letter-spacing: 0.04em;
+   color: #8e8f99;
+}
+
+.agreement-checkbox {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 16px;
+   height: 16px;
+   margin-right: 8px;
+   border-radius: 2px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   cursor: pointer;
+   transition-property: background-color, border-color;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[type="checkbox"]:checked
+   + .agreement-checkbox-label
+   > .agreement-checkbox {
+   background-color: #4d5ae5;
+   border-color: #4d5ae5;
+}
+
+.agrement-link {
+   line-height: 1.33333;
+   text-decoration: underline;
+   text-decoration-skip-ink: none;
+   color: #4d5ae5;
 }
 .button-form {
    font-weight: 500;
