@@ -498,8 +498,7 @@ p {
    pointer-events: none;
 
    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   transition-delay: 250ms;
-   transition-property: transform opacity, visibility;
+   transition-property: opacity, visibility;
 }
 .beckdrop.is-open {
    opacity: 1;
@@ -511,9 +510,9 @@ p {
    position: absolute;
    left: 50%;
    top: 50%;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    max-width: 408px;
    min-height: 584px;
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    transform: translateX(-50%) translateY(-80%);
    box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
       rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.2) 0px 2px 1px 0px;
@@ -525,7 +524,6 @@ p {
 .beckdrop.is-open .modal {
    opacity: 1;
    transform: translateY(-50%) translateX(-50%);
-   transition-delay: 250ms;
 }
 .button-modal-close {
    position: absolute;
@@ -657,8 +655,7 @@ p {
    margin-right: 8px;
    border-radius: 2px;
    cursor: pointer;
-   color: transparent;
-   fill: #f4f4fd;
+   fill: transparent;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -668,6 +665,7 @@ input[type="checkbox"]:checked
    > .agreement-checkbox {
    background-color: #404bbf;
    border: none;
+   fill: #f4f4fd;
 }
 .agrement-link {
    line-height: 1.33333;
