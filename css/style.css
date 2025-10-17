@@ -668,19 +668,19 @@ p {
 input[type="checkbox"]:checked
    + .agreement-checkbox-label
    > .agreement-checkbox {
-   background-color: #4d5ae5;
+   background-color: #404bbf;
    border: none;
 }
 input[type="checkbox"]:checked
    + .agreement-checkbox-label
    .agreement-checkbox-icon {
-   fill: #000;
+   fill: #f4f4fd;
 }
 .agrement-link {
    line-height: 1.33333;
    text-decoration: underline;
    text-decoration-skip-ink: none;
-   color: #f4f4fd;
+   color: #4d5ae5;
 }
 .button-form {
    font-weight: 500;
