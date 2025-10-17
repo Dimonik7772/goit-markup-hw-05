@@ -501,11 +501,9 @@
                </ul>
             </div>
             <div class="footer-form-wrapper">
+               <p class="form-text">Subscribe</p>
                <form class="footer-form" name="subscribe-form">
-                  <div class="footer-form-container">
-                     <label for="subscribe-email" class="footer-form-label"
-                        >Subscribe</label
-                     >
+                  <label for="subscribe-email" class="footer-form-label">
                      <input
                         class="footer-form-input"
                         type="email"
@@ -513,10 +511,10 @@
                         name="subscribe-email"
                         placeholder="E-mail"
                      />
-                  </div>
+                  </label>
                   <button class="footer-form-button" type="submit">
                      Subscribe
-                     <svg width="24" height="24">
+                     <svg class="footer-form-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-Frame"></use>
                      </svg>
                   </button>
@@ -524,7 +522,7 @@
             </div>
          </div>
       </footer>
-      <div class="beckdrop">
+      <div class="beckdrop is-open">
          <div class="modal">
             <button type="button" class="button-modal-close">
                <svg class="button-modal-close-icon" width="8" height="8 ">
@@ -577,10 +575,10 @@
                      </svg>
                   </div>
                </div>
-               <label for="user-comment" class="modal-form-label"
-                  >Comment</label
-               >
-               <div class="modal-form-field">
+               <div class="modal-form-field modal-form-field--textarea">
+                  <label for="user-comment" class="modal-form-label"
+                     >Comment</label
+                  >
                   <textarea
                      class="modal-form-massage"
                      name="user-comment"
@@ -592,11 +590,12 @@
                   <input
                      class="checkbox visually-hidden"
                      type="checkbox"
-                     id="user-agreement"
-                     name="user-agreement"
+                     id="user-privacy"
+                     name="user-privacy"
+                     value="true"
                      checked
                   />
-                  <label for="user-agreement" class="agreement-checkbox-label">
+                  <label for="user-privacy" class="agreement-checkbox-label">
                      <span class="agreement-checkbox">
                         <svg
                            class="agreement-checkbox-icon"
